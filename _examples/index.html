@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<title>2.1.0</title>
+
+<script src="https://unpkg.com/vue@2.6.4/dist/vue.js"></script>
+<script src="https://unpkg.com/dgiot_vue_amis"></script>
+<link rel="stylesheet" href="https://unpkg.com/dgiot_vue_amis/sdk/dgiot_vue_amis.css">
+<link rel='stylesheet' href='https://unpkg.com/amis@2.1.0/sdk/cxd.css'>
+<link rel='stylesheet' href='https://unpkg.com/amis@2.1.0/sdk/ang.css'>
+<link rel='stylesheet' href='https://unpkg.com/amis-ui@2.1.0/lib/helper.css'>
+<link rel='stylesheet' href='https://unpkg.com/amis@2.1.0/sdk/sdk.css'>
+
+<div id="app">
+  <dgiot_vue_amis id="editorName" theme="cxd" className="is-fixed" :preview="isPreview" :isMobile="isMobile" :value="schema"  />
+</div>
+
+<script>
+</script>
+<script>
+  new Vue({
+    el: '#app',
+    data: function() {
+      return {
+        isPreview:false,
+        isMobile:false,
+        schema: {},
+      }
+    }
+  })
+</script>
